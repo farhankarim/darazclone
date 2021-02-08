@@ -33,19 +33,19 @@ session_start();
 <div class="col-md-6">
 <div class="form-group">
 <label class="small mb-1" for="inputFirstName">First Name</label>
-<input name="fname" class="form-control py-4" id="inputFirstName" type="text" placeholder="Enter first name" />
+<input name="fname" class="form-control py-4" required id="inputFirstName" type="text" placeholder="Enter first name" required/>
 </div>
 </div>
 <div class="col-md-6">
 <div class="form-group">
 <label class="small mb-1" for="inputLastName">Last Name</label>
-<input name="lname" class="form-control py-4" id="inputLastName" type="text" placeholder="Enter last name" />
+<input name="lname" class="form-control py-4" required id="inputLastName" type="text" placeholder="Enter last name" required/>
 </div>
 </div>
 </div>
 <div class="form-group">
 <label class="small mb-1" for="inputEmailAddress">Email</label>
-<input class="form-control py-4" name="email" id="inputEmailAddress" type="email" aria-describedby="emailHelp" placeholder="Enter email address" />
+<input class="form-control py-4" name="email" required id="inputEmailAddress" type="email" aria-describedby="emailHelp" placeholder="Enter email address" required/>
 <div style="color:red">
 <?php
 if(isset($_SESSION['emailerror'])){
@@ -59,13 +59,13 @@ unset($_SESSION['emailerror']);
 <div class="col-md-6">
 <div class="form-group">
 <label class="small mb-1" for="inputPassword">Password</label>
-<input class="form-control py-4" name="pass" id="inputPassword" type="password" placeholder="Enter password" />
+<input class="form-control py-4" name="pass" required id="inputPassword" type="password" placeholder="Enter password"  required/>
 </div>
 </div>
 <div class="col-md-6">
 <div class="form-group">
 <label class="small mb-1" for="inputConfirmPassword">Confirm Password</label>
-<input class="form-control py-4" id="inputConfirmPassword" type="password" placeholder="Confirm password" />
+<input class="form-control py-4" id="inputConfirmPassword" required type="password" placeholder="Confirm password" />
 </div>
 </div>
 </div>
@@ -132,7 +132,7 @@ $execute_query = mysqli_query($conn, $query);
 // var_dump($execute_query);
 
 if ($execute_query) {
-header("location: login.php");
+header("location: register.php");
 // echo "<script>alert('user created successfully')</script>";
 } else {
 echo "<script>alert('something went wrong')</script>";
