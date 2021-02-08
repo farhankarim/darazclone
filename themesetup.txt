@@ -1,0 +1,35 @@
+head line 1-13
+
+1 start at
+<!DOCTYPE html>
+13 end at
+</head>
+
+------------------
+top-nav 14-39
+
+14 start at
+<body class="sb-nav-fixed">
+39 end at
+</nav>
+------------------------
+left nav 40-112
+
+40 start at
+<div id="layoutSidenav">
+112 end at 
+<div class="container-fluid">
+-------------------------
+
+footer 664-680
+
+664 start at
+</div>
+680 end at
+</div>
+---------------------------
+scripts 681-691
+681 start at
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+691 end at
+</html>
