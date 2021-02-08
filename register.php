@@ -121,7 +121,7 @@ $email_query = mysqli_query($conn, $email_check);
 if (mysqli_num_rows($email_query) > 0) {
 
 $_SESSION['emailerror']="email is already taken";
-header("location: login.php");
+header("location: register.php");
 // echo "<script>alert('email already in use')</script>";
 } else {
 
